@@ -26,6 +26,10 @@
 3. 总控路由 Worker；卡住回分身拿边界包  
 4. Codex MD 仅双条件触发（见 habits）
 
+## 1c. 项目经理模式（v1.3）
+
+排期、进展、延期 → **Read** [`pm.md`](pm.md)：大脑定版本槽 → 云效只读拉进展 → R1–R8 延期归因；写云效走 Y2。
+
 ### KB 根（与大脑一致）
 
 1. `<当前工作区>/src/resources/oneos-knowledge-base/`  
