@@ -1,5 +1,38 @@
 # wangmian-twin changelog
 
+## v1.3.8 — 2026-07-31
+
+### 听众角色门禁（他人调用前置）
+
+- 新增 [`audience-role.md`](audience-role.md)
+- **其他人**口令激活后本会话**首次**必问：`研发` / `项目经理` / `业务测试及其他同事`；未确认不答实质
+- **本尊**跳过问卷
+- 切换口令：`我的角色是xxx`（仅此生效）
+- **研发禁止调云效查项目进展**；PM / 云效只读默认仅项目经理（或本尊）角色
+- 业务测试及其他：人话逻辑与验收；默认不出 Codex MD、不拉进展
+- SKILL / persona / habits / playbook / pm 已同步
+
+---
+
+## v1.3.7 — 2026-07-31
+
+### 表格下载：统一 Excel `.xlsx`（禁 CSV；推翻强制 `.xls`）
+
+- 禁止 CSV；默认 / 标准产物 `.xlsx`
+- 不为「照顾 Office 2007」强制 `.xls`
+- habits §3.1 + 仓内 `download-xls.js`（`downloadExcel*`）+ `.cursor/rules/download-xls-format.mdc`
+
+---
+
+## v1.3.5 — 2026-07-31
+
+### 做页面 · 禁止偷懒自造（本尊硬规矩）
+
+- habits §3.0：做页面/改原型必须先读 `DESIGN.md` + 对照母版代码沿用 V2；禁止自造顶栏/筛选/按钮皮肤/空态分页等
+- playbook / SKILL 同步检查项；`ui-ux-pro-max` 只补手感不覆盖骨架
+
+---
+
 ## v1.3.4 — 2026-07-31
 
 ### 战神金刚合体梗
