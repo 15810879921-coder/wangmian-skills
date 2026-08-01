@@ -15,7 +15,7 @@
 
 ## 冲突裁决
 
-1. 中期闭环与最新 AutoPRD 优先  
+1. 中期闭环与最新 AutoPRD 优先；租赁主链 → **v2.5.8f**（本 Skill `references/lease-v2.5.8f.md` + 仓内 e2e）  
 2. 业财资金闭环与门禁 → `foundations/biz-finance-integration`  
 3. V1.2 操作细节 → Desktop `web端`（`00-source-corpus.md`）  
 4. 氢费核对 ≠ 对账 → V2  

@@ -5,8 +5,8 @@
 
 | Skill | 花名 | 当前能力要点 |
 |---|---|---|
-| `yanchufasui` | 言出法随 | 按本尊习惯落需求 / 改原型 UI·UX；内嵌调法眼；写云效前确认 |
-| `fayanruju` | 法眼如炬 | OneOS 知识库窄检索与口径裁决（L0–L3）；不改原型 |
+| `yanchufasui` | 言出法随 | 按本尊习惯落需求/改原型；**闭环五件套**；内嵌法眼；租赁对齐 v2.5.8f；写云效前确认 |
+| `fayanruju` | 法眼如炬 | KB 窄检索裁决 + **闭环五件套** + 租赁 **v2.5.8f** digest；不改原型 |
 | `wangmian-twin` | （兼容 stub） | 已更名 → 转读 `yanchufasui` |
 | `wangmian-brain` | （兼容 stub） | 已更名 → 转读 `fayanruju` |
 

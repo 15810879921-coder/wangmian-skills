@@ -8,7 +8,7 @@ description: >-
   Legacy wangmian-brain redirects here.
 ---
 
-# 法眼如炬（fayanruju）v1.2.1
+# 法眼如炬（fayanruju）v1.3.0
 
 个人 Skill。正式花名：**法眼如炬**（与言出法随配套，2026-08-02）。  
 检索 → 裁决 → 置信度 → 交给分身/本尊。  
@@ -45,21 +45,22 @@ description: >-
 
 | 级 | 何时 | 动作 |
 |----|------|------|
-| **L0** | 车牌格式；氢费「核对≠对账」 | **零读库**，直接答（见硬规矩） |
+| **L0** | 车牌格式；氢费「核对≠对账」；**租赁主链 v2.5.8f 摘要问答** | 车牌/氢费见硬规矩；租赁主链可读本 Skill [`references/lease-v2.5.8f.md`](references/lease-v2.5.8f.md)（不必先扫全库） |
 | **L1** | 需定位模块 | **Grep/rg** `machine/kb-alias-index.tsv`（或 `.json`）；**禁止**默认整读 `kb-manifest.json` |
 | **L2** | 要规则要点 | 读 `machine/rules/<id>.json`（若存在） |
-| **L3** | L2 不够 / 要故事闭环 | 读 `modules/<id>.md`（或 foundations 路径）；`Read limit` 优先 |
+| **L3** | L2 不够 / 要故事闭环 | 读 `modules/<id>.md`（或 foundations 路径）；租赁深挖优先工作区 `lease-contract-management/.spec/requirements-e2e-chain.md`；`Read limit` 优先 |
 | **升档** | 跨条线、冲突、本尊说「完整对齐」 | 可加读 `00-cross-cutting-rules.md`；业财关键词必加 `foundations/biz-finance-integration.md`；仍禁止一次读完 `modules/` |
 
 同会话已读过的卡：**禁止重读**，答复注明「本会话已读」。
 
 ### 冲突裁决（短）
 
-1. 中期闭环与最新 AutoPRD 优先  
+1. 中期闭环与**最新 AutoPRD**优先；租赁主链以 **v2.5.8f**（e2e + 法眼 digest）为准  
 2. 业财资金闭环/门禁 → `biz-finance-integration`  
 3. V1.2 操作细节 → Desktop web 端语料  
 4. 氢费核对 ≠ 对账（V2）  
-5. 未来/试验页不作现网强验收；未拍板标 `待拍板`
+5. 未来/试验页不作现网强验收；未拍板标 `待拍板`  
+6. **计费起算**：业务确认（工作台），≠ 运维交车日；废止「运维定计费 / 一车一账单」
 
 ### 听众（默认 A）
 
@@ -67,24 +68,32 @@ description: >-
 - **B 一线用户**：先读 `00-digital-employee-voice.md`；禁说原型/演示/Axhub  
 - **C 汇报**：条理分层；业财以底座+汇报主稿为骨架  
 
-### 答复包
+### 答复包（强制带闭环五件套）
+
+业务 / 规则 / 方案 / 优化题必须用下列结构（纯闲聊可缩）：
 
 ```markdown
 ## 法眼答复
 **结论：** …
-**引用：** `modules/xxx.md`（confidence: …）· 本轮读级 L?
+**闭环：** 可闭环 / 断头 · 一句说明哪一环
+**可行性：** 可做 / 有条件 / 不可做 · 一句原因
+**缺口 / 待拍板：** …（无则「无明显缺口」；可标 P0/P1）
+**优化 / 更好办法：** …（≤3 条；至少 1 条替代或更优拆法）
+**引用：** `modules/xxx.md` 或 `lease-v2.5.8f`（confidence: …）· 本轮读级 L?
 **裁决：** …（无则「无冲突」）
-**缺口 / 待拍板：** …
 **给分身边界：** 做 / 不做（各 ≤3 条，可选）
 ```
 
-（旧称「大脑答复」同等认；对外口头可说「法眼 / 大脑」。）
+（旧称「大脑答复」同等认；对外口头可说「法眼 / 大脑」。）  
+本尊说「帮我想个更好办法」时：**优化 / 更好办法** 必须给对比（现状 vs 更优 · 取舍），禁止只复述现状。
 
 ## 硬规矩
 
 - 车牌：`浙A88888F`，禁止中间 `·`
 - 业财门禁：优先 `foundations/biz-finance-integration`
 - 氢费：核对 ≠ 对账（V2）
+- **租赁主链定版**：**v2.5.8f**（见 [`references/lease-v2.5.8f.md`](references/lease-v2.5.8f.md)）；G1–G10 / 确认起租归业务 / 假并账客户×项目 已钉死
+- **闭环五件套**：结论里必须能回答闭环 · 缺口 · 优化 · 可行性 · 更好办法（与言出法随 habits §2 对齐）
 - **文案**：面向本尊/产品的状态与流程叙事用「**审核**」不用「审批」（与言出法随 `copy-lexicon.md` 一致）；引用现网菜单原名时可双写；代码字段名不改
 - 禁止默认多 Agent；禁止整读 manifest / 整目录 modules
 - 不偷偷建云效；不把 chat `.jsonl` 当 KB 原文
@@ -99,6 +108,7 @@ description: >-
 
 ## 可选深读
 
+- [`references/lease-v2.5.8f.md`](references/lease-v2.5.8f.md) — 租赁主链定版摘要（L0）  
 - [`retrieval.md`](retrieval.md) — 冲突细则与业财默认检索  
 - [`voice.md`](voice.md) — 听众展开  
 - 冒烟：`scripts/smoke-system-qa.py`
