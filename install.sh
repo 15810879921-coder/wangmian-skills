@@ -2,11 +2,12 @@
 set -e
 
 # ===================================================
-# 王冕分身 Skills（wangmian-brain + wangmian-twin）
+# 王冕驱动 Skills（言出法随 yanchufasui + 法眼如炬 fayanruju）
 # 一键安装 / 一键更新脚本 (支持 Cursor & Codex)
+# 兼容旧名：wangmian-twin / wangmian-brain（stub）
 # ===================================================
 
-echo "🚀 开始安装 / 更新 王冕分身 Skills (wangmian-brain & wangmian-twin)..."
+echo "开始安装 / 更新：言出法随 (yanchufasui) + 法眼如炬 (fayanruju)..."
 
 TMP_DIR="/tmp/wangmian-skills-installer-$$"
 mkdir -p "$TMP_DIR"
@@ -18,50 +19,51 @@ trap cleanup EXIT
 
 REPO_URL="https://github.com/15810879921-coder/wangmian-skills.git"
 
-echo "📥 正在拉取最新代码 ($REPO_URL)..."
+echo "正在拉取最新代码 ($REPO_URL)..."
 git clone --depth 1 "$REPO_URL" "$TMP_DIR/repo" >/dev/null 2>&1 || {
-    echo "❌ 克隆仓库失败，请检查网络或 GitHub 访问权限。"
+    echo "克隆仓库失败，请检查网络或 GitHub 访问权限。"
     exit 1
 }
 
 CURSOR_SKILLS_DIR="$HOME/.cursor/skills"
 CODEX_SKILLS_DIR="$HOME/.codex/skills"
 
+install_skill() {
+    local target_base="$1"
+    local skill_name="$2"
+    if [ -d "$TMP_DIR/repo/skills/$skill_name" ]; then
+        rm -rf "$target_base/$skill_name"
+        cp -R "$TMP_DIR/repo/skills/$skill_name" "$target_base/"
+        echo "  ✅ $skill_name → $target_base/$skill_name"
+    fi
+}
+
 install_to_agent() {
     local target_base="$1"
     local agent_name="$2"
 
-    echo "⚙️ 正在部署到 $agent_name ($target_base)..."
+    echo "正在部署到 $agent_name ($target_base)..."
     mkdir -p "$target_base"
 
-    # 安装/更新 wangmian-brain
-    if [ -d "$TMP_DIR/repo/skills/wangmian-brain" ]; then
-        rm -rf "$target_base/wangmian-brain"
-        cp -R "$TMP_DIR/repo/skills/wangmian-brain" "$target_base/"
-        echo "  ✅ wangmian-brain 已安装/更新至 $target_base/wangmian-brain"
-    fi
-
-    # 安装/更新 wangmian-twin
-    if [ -d "$TMP_DIR/repo/skills/wangmian-twin" ]; then
-        rm -rf "$target_base/wangmian-twin"
-        cp -R "$TMP_DIR/repo/skills/wangmian-twin" "$target_base/"
-        echo "  ✅ wangmian-twin 已安装/更新至 $target_base/wangmian-twin"
-    fi
+    # 主 skill
+    install_skill "$target_base" "yanchufasui"
+    install_skill "$target_base" "fayanruju"
+    # 旧名兼容 stub
+    install_skill "$target_base" "wangmian-twin"
+    install_skill "$target_base" "wangmian-brain"
 }
 
-# 1. 部署 Cursor
 install_to_agent "$CURSOR_SKILLS_DIR" "Cursor"
-
-# 2. 部署 Codex
 install_to_agent "$CODEX_SKILLS_DIR" "Codex"
 
-# 3. 运行冒烟测试（若有）
-if command -v python3 >/dev/null 2>&1 && [ -f "$CURSOR_SKILLS_DIR/wangmian-brain/scripts/smoke-system-qa.py" ]; then
-    echo "🧪 正在执行冒烟测试..."
-    python3 "$CURSOR_SKILLS_DIR/wangmian-brain/scripts/smoke-system-qa.py" || true
+if command -v python3 >/dev/null 2>&1 && [ -f "$CURSOR_SKILLS_DIR/fayanruju/scripts/smoke-system-qa.py" ]; then
+    echo "正在执行法眼冒烟测试..."
+    python3 "$CURSOR_SKILLS_DIR/fayanruju/scripts/smoke-system-qa.py" || true
 fi
 
 echo ""
-echo "🎉 安装/更新完成！"
-echo "👉 请在 Cursor 或 Codex 中【新开 Chat】即可立即使用。"
-echo "👉 唤醒口令：王冕分身 / $wangmian-twin / 王冕分身大脑 / $wangmian-brain"
+echo "安装/更新完成！"
+echo "请在 Cursor 或 Codex 中【新开 Chat】再喊口令。"
+echo "主唤名：言出法随 / \$yanchufasui ；法眼如炬 / \$fayanruju"
+echo "签名：王冕驱动 · 言出法随 / 王冕驱动 · 法眼如炬"
+echo "旧口令 wangmian-twin / wangmian-brain 仍兼容（会转读新 Skill）。"

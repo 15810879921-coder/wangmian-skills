@@ -1,6 +1,6 @@
 # 王冕分身 · 项目经理能力（PM Mode）v1.3
 
-与 `$wangmian-brain`、`$YunxiaoPM`（云效产品路径）、`$yunxiao-development-delivery`（开发路径）编排使用。  
+与 `$fayanruju`（法眼如炬）、`$YunxiaoPM`（云效产品路径）、`$yunxiao-development-delivery`（开发路径）编排使用。  
 **写云效**仍遵守 Y2 + Plan 门禁；**只读进展 / 延期分析**可直接干。
 
 ## 0. 角色门禁（v1.3.8）

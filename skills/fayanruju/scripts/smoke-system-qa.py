@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""wangmian-brain v1.1 smoke: 10 system-usage QAs via L0/L1/L3 narrow path."""
+"""fayanruju (法眼如炬) smoke: 10 system-usage QAs via L0/L1/L3 narrow path."""
 from __future__ import annotations
 
 import json
@@ -110,7 +110,7 @@ CASES = [
 
 
 def main() -> int:
-    print("== wangmian-brain smoke (system usage ×10) ==")
+    print("== fayanruju / 法眼如炬 smoke (system usage ×10) ==")
     gate = skill_gate_ok()
     if gate:
         for e in gate:

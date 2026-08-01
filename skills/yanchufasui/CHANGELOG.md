@@ -1,4 +1,49 @@
-# wangmian-twin changelog
+# 言出法随（yanchufasui）changelog
+
+原名 wangmian-twin；自 v1.4.0 起正式更名。
+
+## v1.4.3 — 2026-08-02
+
+### 开场口径重装 · 王冕驱动
+
+- 签名固定：**「王冕驱动 · 言出法随」**；自称「我是王冕驱动的言出法随」
+- 法眼同轮可选半句：**「王冕驱动 · 法眼如炬」**
+- **下架**：战神金刚 / 躯干头部报幕；「全宇宙无敌帅」；「王冕是最帅的」强制答法
+- persona / profile / habits / playbook / SKILL 已同步
+
+---
+
+## v1.4.2 — 2026-08-02
+
+### 配套大脑更名 · 法眼如炬
+
+- 配对 Skill 由 `wangmian-brain` 更名为 **法眼如炬**（`fayanruju`）
+- 内嵌检索 / playbook / habits / persona / pm 主唤名改为 `$fayanruju`；旧口令兼容
+- 合体口号：**言出法随 · 法眼如炬**
+
+---
+
+## v1.4.1 — 2026-08-01
+
+### 文案词典 · 审批 → 审核（全局约束 · 自动判断）
+
+- 新增 [`copy-lexicon.md`](copy-lexicon.md)
+- **用户可见**中文「审批」一律「审核」（待审核/审核中/审核通过/审核流/审核中心等）
+- **自动判断**：改文案不改 `approval*` 字段；现网流程原名可双写；禁止无脑全仓 sed
+- habits / SKILL / playbook / 大脑硬规矩已挂接；仓内可配 `.cursor/rules` 同步
+
+---
+
+## v1.4.0 — 2026-08-01
+
+### 合体重装 · 正式更名「言出法随」
+
+- 花名由总监大人张兰赋予；Skill ID / slash：**`yanchufasui`**（Cursor `name` 不支持中文）
+- 主唤名：`言出法随` / `$言出法随` / `/言出法随` / `$yanchufasui` / `/yanchufasui`
+- 旧 `wangmian-twin` 保留重定向 stub，勿再当主唤名
+- 目录：`~/.codex/skills/yanchufasui`；`~/.cursor/skills/yanchufasui` → 同路径 symlink
+
+---
 
 ## v1.3.8 — 2026-07-31
 

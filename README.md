@@ -1,32 +1,41 @@
-# 王冕分身 Skills（wangmian-brain + wangmian-twin）
+# 王冕驱动 Skills（言出法随 + 法眼如炬）
 
 > 官方仓库：支持 **Cursor** 与 **Codex** 一键安装 / 更新。  
-> **wangmian-twin 当前版本：v1.2.0**（详见 `skills/wangmian-twin/CHANGELOG.md`）
+> 签名：**王冕驱动 · 言出法随** / **王冕驱动 · 法眼如炬**
 
-| Skill | 中文名 | 当前能力要点 |
+| Skill | 花名 | 当前能力要点 |
 |---|---|---|
-| `wangmian-brain` | 王冕的分身大脑 | KB 检索与口径裁决（L0–L3 + alias）；v1.1 |
-| `wangmian-twin` | 王冕的数字分身 | 需求/原型落地 · 大脑裁决 · 拉式补库协议 · G1/G2 门禁 · 总控调度 · Codex MD（仅研发问规则/能不能做） |
+| `yanchufasui` | 言出法随 | 按本尊习惯落需求 / 改原型 UI·UX；内嵌调法眼；写云效前确认 |
+| `fayanruju` | 法眼如炬 | OneOS 知识库窄检索与口径裁决（L0–L3）；不改原型 |
+| `wangmian-twin` | （兼容 stub） | 已更名 → 转读 `yanchufasui` |
+| `wangmian-brain` | （兼容 stub） | 已更名 → 转读 `fayanruju` |
 
 ---
 
-## 🚀 一键安装 / 更新
+## 一键安装 / 更新
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/15810879921-coder/wangmian-skills/main/install.sh | bash
 ```
 
-或丢给 AI：
+或分别用 npx：
 
-```text
-请执行：curl -fsSL https://raw.githubusercontent.com/15810879921-coder/wangmian-skills/main/install.sh | bash
+```bash
+npx skills add 15810879921-coder/wangmian-skills --skill yanchufasui -a cursor -a codex -g -y
+npx skills add 15810879921-coder/wangmian-skills --skill fayanruju -a cursor -a codex -g -y
 ```
 
-装完请**新开 Chat**。口令：`王冕分身` / `$wangmian-twin` / `王冕分身大脑` / `$wangmian-brain`
+装完请**新开 Chat**。
+
+- 分身口令：`言出法随` / `$yanchufasui` / `/yanchufasui`
+- 法眼口令：`法眼如炬` / `$fayanruju` / `/fayanruju`
+- 旧口令 `王冕分身` / `$wangmian-twin`、`分身大脑` / `$wangmian-brain` 仍兼容
 
 ---
 
 ## 链接
 
 - 仓库：https://github.com/15810879921-coder/wangmian-skills
-- 分身更新日志：https://github.com/15810879921-coder/wangmian-skills/blob/main/skills/wangmian-twin/CHANGELOG.md
+- 安装中心：https://15810879921-coder.github.io/oneos-pm-skills/
+- 言出法随 changelog：`skills/yanchufasui/CHANGELOG.md`
+- 法眼如炬 changelog：`skills/fayanruju/CHANGELOG.md`
