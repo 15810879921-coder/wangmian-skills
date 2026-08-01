@@ -2,6 +2,17 @@
 
 原名 wangmian-twin；自 v1.4.0 起正式更名。
 
+## v1.4.5 — 2026-08-02
+
+### 提速 · 瘦启动 boot.md
+
+- 激活**只强制 Read** [`boot.md`](boot.md)；**废止** persona/profile/habits/playbook/audience-role/copy-lexicon 六连读
+- 按题型升档；研发规则题优先只走法眼如炬
+- playbook / habits 文首同步「勿默认全读」
+- 安装脚本默认跳过冒烟（`RUN_SMOKE=1` 才跑），加快同事首装
+
+---
+
 ## v1.4.4 — 2026-08-02
 
 ### 闭环五件套 + 租赁 v2.5.8f 指针

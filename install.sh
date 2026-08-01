@@ -56,7 +56,8 @@ install_to_agent() {
 install_to_agent "$CURSOR_SKILLS_DIR" "Cursor"
 install_to_agent "$CODEX_SKILLS_DIR" "Codex"
 
-if command -v python3 >/dev/null 2>&1 && [ -f "$CURSOR_SKILLS_DIR/fayanruju/scripts/smoke-system-qa.py" ]; then
+# 冒烟默认跳过；需要时：RUN_SMOKE=1 bash install.sh
+if [ "${RUN_SMOKE:-0}" = "1" ] && command -v python3 >/dev/null 2>&1 && [ -f "$CURSOR_SKILLS_DIR/fayanruju/scripts/smoke-system-qa.py" ]; then
     echo "正在执行法眼冒烟测试..."
     python3 "$CURSOR_SKILLS_DIR/fayanruju/scripts/smoke-system-qa.py" || true
 fi

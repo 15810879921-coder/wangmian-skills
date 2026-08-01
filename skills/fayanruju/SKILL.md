@@ -8,11 +8,14 @@ description: >-
   Legacy wangmian-brain redirects here.
 ---
 
-# 法眼如炬（fayanruju）v1.3.0
+# 法眼如炬（fayanruju）v1.3.1
 
 个人 Skill。正式花名：**法眼如炬**（与言出法随配套，2026-08-02）。  
 检索 → 裁决 → 置信度 → 交给分身/本尊。  
 **不替代**模块全文 AutoPRD；**不**改原型（改原型归 `$yanchufasui` / 言出法随；旧名 `$wangmian-twin` 已退役）。
+
+> **提速**：本 Skill 协议已内联；**禁止**默认再读 `retrieval.md` / `voice.md`。  
+> 研发同事只问规则/能不能做时，**直接用本 Skill**，不必先拉满言出法随六件套（言出法随 v1.4.5 起亦引导优先走法眼）。
 
 > **技能 ID**：Cursor `name` 仅支持英文小写，目录与 slash 为 **`fayanruju`**。  
 > 中文口令 **`/法眼如炬`**、**`$法眼如炬`**、自然语言「法眼如炬」同等生效。  

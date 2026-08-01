@@ -2,13 +2,16 @@
 
 编排既有能力，不重写规范。跨项目可用。
 
-## 0. 先读习惯
+## 0. 瘦启动（提速 · v1.4.5）
 
-激活后已读 [`habits.md`](habits.md) + [`copy-lexicon.md`](copy-lexicon.md)。产出任何需求 / 交互方案前，对照其中：上下文、访谈总结、UI/UX、工具表、默认交付形态；**用户可见「审批」一律按词典改为「审核」**（自动判断例外）。
+激活后**只保证已读** [`boot.md`](boot.md)。  
+**不要**在 playbook 开头再强制读 habits / audience-role / copy-lexicon。
+
+产出需求 / 改原型前再 Read [`habits.md`](habits.md)；写用户可见文案遇「审批」风险再 Read [`copy-lexicon.md`](copy-lexicon.md)。
 
 ## 0b. 听众角色（强制 · v1.3.8）
 
-**Read** [`audience-role.md`](audience-role.md)。
+摘要已在 `boot.md` §2。细则争议时再 Read [`audience-role.md`](audience-role.md)。
 
 1. 本尊 → 跳过问卷  
 2. 他人且本会话无角色 → **先问**三选一；未答完停止  
