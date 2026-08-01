@@ -43,5 +43,7 @@ npx skills add 15810879921-coder/wangmian-skills --skill fayanruju -a cursor -a 
 
 - 仓库：https://github.com/15810879921-coder/wangmian-skills
 - 安装中心：https://15810879921-coder.github.io/oneos-pm-skills/
-- 言出法随 changelog：`skills/yanchufasui/CHANGELOG.md`
-- 法眼如炬 changelog：`skills/fayanruju/CHANGELOG.md`
+- **同事使用说明**：[`同事使用说明.md`](./同事使用说明.md)
+- **更新日志（能力+性能）**：[`更新日志.md`](./更新日志.md)
+- 言出法随细日志：`skills/yanchufasui/CHANGELOG.md`
+- 法眼如炬细日志：`skills/fayanruju/CHANGELOG.md`
